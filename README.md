@@ -8,6 +8,7 @@ PDF と画像を扱う小さな CLI ツールを集めたモノレポです。�
 |--------|------|------|
 | [`join-pdf`](./join-pdf) | 2つの PDF を **同じ用紙サイズに揃えて結合** する | PyMuPDF |
 | [`flatten-pdf`](./flatten-pdf) | PDF を **編集不可（フラット化）** にする | PyMuPDF |
+| [`compress-pdf`](./compress-pdf) | PDF の **容量・推定DPI** を確認し、**圧縮** する | PyMuPDF（任意: Ghostscript） |
 | [`pdf2img`](./pdf2img) | PDF の各ページを **画像（PNG / JPEG）** にエクスポート | PyMuPDF |
 | [`img2pdf`](./img2pdf) | 複数の画像を **1つの PDF** にまとめる | Pillow |
 
@@ -63,6 +64,7 @@ python3 main.py img/ -o output.pdf
 ```
 toolhub/
 ├── README.md
+├── compress-pdf/  # PDF の容量・DPI 確認と圧縮
 ├── flatten-pdf/   # PDF を編集不可（フラット化）
 ├── img2pdf/       # 画像 → PDF
 ├── join-pdf/      # PDF 結合（用紙サイズ統一）
